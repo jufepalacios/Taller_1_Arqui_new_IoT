@@ -1,7 +1,7 @@
 ---
-status: "proposed”
-date: 2023-06-17
-deciders: Julian Moreno, Juan Palacios, Nicolas Tibatá, Santiago Segura, Vihlai Maldonado
+status: "{proposed}”
+date: {2023-06-17}
+deciders: {Julian Moreno, Juan Palacios, Nicolas Tibatá, Santiago Segura, Vihlai Maldonado}
 ---
 # Selección de Estilo de arquitectura para la factoría
 
