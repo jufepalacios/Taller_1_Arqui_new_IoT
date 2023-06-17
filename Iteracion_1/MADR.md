@@ -1,19 +1,13 @@
 ---
-# These are optional elements. Feel free to remove any of them.
-status: "{proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}"
-date: {YYYY-MM-DD when the decision was last updated}
-deciders: {list everyone involved in the decision}
-consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
-informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
+status: "proposed”
+date: 2023-06-17
+deciders: Julian Moreno, Juan Palacios, Nicolas Tibatá, Santiago Segura, Vihlai Maldonado
 ---
-# {short title of solved problem and solution}
+# Selección de Estilo de arquitectura para la factoría
 
 ## Context and Problem Statement
+Una factoría 4.0 desea implementar un software que sea capaz de crear y asignar ordenes de trabajo a sus operarios en sus 3 líneas de producción y registrar el comportamiento de estas por medio de sensores IoT. Ademas, estos datos deberán poder ser visualizados para analizar el estado de las líneas de producción. Dicha información deberá ser de fácil acceso para todos en la factoría por medio de un sistema de mensajería. Finalmente, el software debería ser capaz de predecir y tomar acción ante algún fallo de una línea de producción y optimizar el volumen de ordenes de trabajo.
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
- You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
-
-<!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
 * {decision driver 1, e.g., a force, facing concern, …}
