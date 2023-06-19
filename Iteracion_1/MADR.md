@@ -13,62 +13,63 @@ Una factoría 4.0 desea implementar un software que sea capaz de crear y asignar
 
 ## Decision Drivers
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+* Almacenamiento - almacenar la información recopilada por los sensores, el inventario y las ordenes de trabajo.
+* Visualización – Dashboard para visualizar los datos de la factoría en tiempo real.
+* Mensajería – Comunicación entre los componentes del sistema.
+* Optimización – Evaluación y ejecución de los algoritmos de predicción.
+* Lectura – Capturar los valores registrados por los diferentes sensores.
+
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* Estilo por eventos (EDA, Event-Driven Architecture)
+* Estilo MODEL-VIEW-CONTROLLER (MVC)
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because
-{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+Chosen option: "Estilo por eventos: EDA", porque resuelve todos los requerimientos funcionales.
 
-<!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
+* Buena, porque es fácil agregar emisores de eventos y consumidores.
+* Buena, porque se puede distribuir el evento de forma ramificada a los consumidores y estos pueden procesarlo en paralelo con un propósito diferente.
+* Buena, porque permite supervisar y recibir alertas sobre cualquier anomalía, cambio o actualización en los eventos.
+* Mala, porque se debe garantizar la entrega de los eventos, no se pueden perder. 
 
-<!-- This is an optional element. Feel free to remove. -->
+
 ### Confirmation
 
+# no creo que necesitemos este
 {Describe how the implementation of/compliance with the ADR is confirmed. E.g., by a review or an ArchUnit test.
  Although we classify this element as optional, it is included in most ADRs.}
 
-<!-- This is an optional element. Feel free to remove. -->
+
 ## Pros and Cons of the Options
 
-### {title of option 1}
+### Estilo por eventos
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
+Descripción:
+Se basa en la detección, consumo y reacción a eventos, que representa un cambio significativo en el estado de un sistema.
 
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
+* Buena, porque los componentes se comunican a través de eventos, lo que les permite estar desacoplados entre sí. Esto mejora la flexibilidad, escalabilidad y mantenibilidad.
+* Buena, porque permite procesamiento asíncrono y con ello mejorar el rendimiento y la capacidad de respuesta del sistema.
+* Buena, porque los eventos pueden procesarse inmediatamente después de producirse, lo que permite actualizaciones en tiempo real, notificaciones instantáneas y reacciones rápidas a condiciones cambiantes.
+* Mala, porque coordinar el flujo de eventos y gestionar las suscripciones a los mismos requiere un diseño y una implementación cuidadosos.
+* Mala, porque los eventos perdidos o descartados pueden provocar incoherencias en los datos o acciones perdidas.
 
-### {title of other option}
+### Estilo MODEL-VIEW-CONTROLLER
 
-{example | description | pointer to more information | …}
+Descripción
+comúnmente utilizado para desarrollar interfaces de usuario que divide la lógica del programa relacionado en tres elementos interconectados.
 
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
+* Buena, porque los componentes de visualización, modelo y controlador se encuentran separados y esto hace que se pueden gestionar y realizar cambios en cualquiera de ellos sin interferir en los otros.
+* Buena, porque es escalable ya que se pueden editar individualmente los componentes. 
+* Mala, porque puede agregar complejidad a aplicaciones pequeñas o a problemas donde no se puedan identificar las partes de visualización, modelo y controlador.
+* Mala, porque la comunicación entre los tres componentes podría requerir recursos adicionales y mayor tiempo de procesamiento por lo que afecta el rendimiento.
 
-<!-- This is an optional element. Feel free to remove. -->
 ## More Information
+
+# No creo que necesitemos este
 
 {You might want to provide additional evidence/confidence for the decision outcome here and/or
  document the team agreement on the decision and/or
