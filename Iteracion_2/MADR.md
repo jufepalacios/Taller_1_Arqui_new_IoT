@@ -6,7 +6,7 @@ consulted: {Julian Moreno, Santiago Segura}
 informed: {Juan Palacios}
 ---
 
-# {Sekección de patrones de arquitectura para mensajería}
+# {Selección de patrones de arquitectura para mensajería}
 
 ## Context and Problem Statement
 La factoría 4.0 requiere que sus operarios estén permanentemente notificados del estado de las máquinas y de la línea de producción. Para ello se deben poder suscribir a diferentes eventos y notificaciones como actuailizaciones en la produccción, fallos de sensores o sobrecarga de producción. En caso de que se supere un umbral de intentos de conexión, se considerará que el dispositivo está fuera de servicio.
