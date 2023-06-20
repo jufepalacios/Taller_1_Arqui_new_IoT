@@ -1,30 +1,28 @@
 ---
-# These are optional elements. Feel free to remove any of them.
-status: "{proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}"
-date: {YYYY-MM-DD when the decision was last updated}
-deciders: {list everyone involved in the decision}
-consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
-informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
+status: {proposed}
+date: {2023-06-17}
+deciders: {Nicolas Tibatá, Vihlai Maldonado}
+consulted: {Julian Moreno, Santiago Segura}
+informed: {Juan Palacios}
 ---
-# {short title of solved problem and solution}
+
+# {Sekección de patrones de arquitectura para mensajería}
 
 ## Context and Problem Statement
-
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
- You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+La factoría 4.0 requiere que sus operarios estén permanentemente notificados del estado de las máquinas y de la línea de producción. Para ello se deben poder suscribir a diferentes eventos y notificaciones como actuailizaciones en la produccción, fallos de sensores o sobrecarga de producción. En caso de que se supere un umbral de intentos de conexión, se considerará que el dispositivo está fuera de servicio.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+* Almacenamiento - almacenar la información recopilada por los sensores, el inventario y las ordenes de trabajo.
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
+* Patrón publicador/suscriptor (Publish Suscriber)
+* Broker de mensajes
+* Cadena de responsabilidad (chain of responsibility)
+
+
 * … <!-- numbers of options can vary -->
 
 ## Decision Outcome
@@ -48,29 +46,25 @@ Chosen option: "{title of option 1}", because
 <!-- This is an optional element. Feel free to remove. -->
 ## Pros and Cons of the Options
 
-### {title of option 1}
+### Patrón publicador/suscriptor 
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
 
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
+* Buena, porque permite desacomplamiento, esta solución permite el desacople de los subsistemas que necesitan comunicarse.
+* Buena, dado que ofrece escalabilidad. Permite una mayor escalabilidad y mejora la capacidad de respuesta del remitente.
+* Buena, debido a que ofrece confiabilidad, la mensajería asíncronica permite que las aplicaciones controlen las intermitencias.
+* Mala, ya que puede incurrir en duplicación de mensajes, la implementación debe considerar la deduplicación de los mensajes que puede ocurrir debido a errores en el publicador.
+* Mala, ya que se debe incluir la expiración de los mensajes. Esto para evitar incrementar el tamaño de la cola de mensajes, se debe incluir un tiempo de expiración y asegurar que el mensaje fue procesado para evitar pérdida de información.
+* Neutral, orden de los mensajes. La implementación necesita asegurar que el orden del envío de los mensajes de cada sensor es con tiempo incremental, para asegurar que la información visualizada y consumida por los suscriptores sea la correcta.
 
-### {title of other option}
+### BROKER DE MENSAJES	
 
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
-
-<!-- This is an optional element. Feel free to remove. -->
+* Buena, Flexibilidad, mantenibilidad y adaptibilidad.
+* Mala, dependencia del intermediario ya que se agrega un elemento crítico en la comunicación, el intermediario.
+* Buena, escalabilidad ya que hay posibilidad de distribución.
+* Mala, Escalabilidad limitada: A pesar de poder lograr escalar, esta tiene la limitante de los recursos del intermediarios.
+* Buena, interoperabilidad entre brokers.	
+			
+	
 ## More Information
 
 {You might want to provide additional evidence/confidence for the decision outcome here and/or
