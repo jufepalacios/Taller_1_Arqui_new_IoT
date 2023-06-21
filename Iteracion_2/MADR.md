@@ -27,8 +27,7 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because
-{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+Chosen option: "Patrón pub/sub", porque resuelve los requerimientos funcionales ya que permite a los operadores suscribirse a diferentes eventos y notificaciones, asimismo, tiene una mejor escalabilidad
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
@@ -48,6 +47,9 @@ Chosen option: "{title of option 1}", because
 
 ### Patrón publicador/suscriptor 
 
+Un objeto llamado publicador mantiene una lista de suscriptores u observadores interesados en ser notificados de cambios o eventos ocurridos en el sujeto. Cuando se produce un evento relevante, el sujeto notifica automáticamente a todos los suscriptores registrados, quienes pueden realizar acciones o procesar la información recibida. Este patrón permite una comunicación eficiente y desacoplada entre componentes, ya que el sujeto no necesita tener conocimiento directo de los suscriptores y los suscriptores no están acoplados directamente al sujeto, lo que facilita la extensibilidad y la reutilización del código.
+La mensajería asíncrona es una forma eficaz de desacoplar a los remitentes de los consumidores y evitar el bloqueo del remitente para esperar una respuesta.
+
 
 * Buena, porque permite desacomplamiento, esta solución permite el desacople de los subsistemas que necesitan comunicarse.
 * Buena, dado que ofrece escalabilidad. Permite una mayor escalabilidad y mejora la capacidad de respuesta del remitente.
@@ -57,6 +59,7 @@ Chosen option: "{title of option 1}", because
 * Neutral, orden de los mensajes. La implementación necesita asegurar que el orden del envío de los mensajes de cada sensor es con tiempo incremental, para asegurar que la información visualizada y consumida por los suscriptores sea la correcta.
 
 ### BROKER DE MENSAJES	
+Patrón de diseño arquitectónico que se utiliza para facilitar la comunicación entre diferentes componentes o sistemas distribuidos. En este patrón, un componente centralizado conocido como "broker" actúa como intermediario entre los productores de mensajes y los consumidores. Los productores envían mensajes al broker, que luego los enruta y distribuye a los consumidores interesados en esos mensajes. El broker maneja las tareas de encolamiento, enrutamiento y entrega de mensajes, lo que permite una comunicación desacoplada entre los diferentes componentes.
 
 * Buena, Flexibilidad, mantenibilidad y adaptibilidad.
 * Mala, dependencia del intermediario ya que se agrega un elemento crítico en la comunicación, el intermediario.
@@ -64,7 +67,18 @@ Chosen option: "{title of option 1}", because
 * Mala, Escalabilidad limitada: A pesar de poder lograr escalar, esta tiene la limitante de los recursos del intermediarios.
 * Buena, interoperabilidad entre brokers.	
 			
-	
+## Patrón Chain of responsibility
+
+Permite pasar peticiones a lo largo de una cadena de gestores. Al recibir una solicitud, cada gestor decide si procesarla o pasarla al siguiente gestor de cadena.
+
+* Buena, Handlers: Donde la peiticion pasa el siguiente manejador 
+* Buena, procesamiento inidividual de cada evento, lo que permite personalizar la accion con cada mensaje recibido
+* Buena, complementacion de acciones a los mensajes, donde permite inidcar la tarea especifica para cada mensaje 
+* Mala, debido a eventos encadenados, los eventos solo deben ser notificados mas no procesados. 
+* Mala, los eventos no requieren ser procesados por diferentes handlers, por lo tanto es sobrecomplejizar la arquitectura 
+* Mala, los eventos no requieren de peticiones para la generacion de notifiaciones, por lo tanto generaria un delay en el sistema
+
+
 ## More Information
 
 {You might want to provide additional evidence/confidence for the decision outcome here and/or
