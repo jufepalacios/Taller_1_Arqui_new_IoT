@@ -63,7 +63,4 @@ comúnmente utilizado para desarrollar interfaces de usuario que divide la lógi
 
 ## More Information
 
-[Mayor información sobre EDA](more_information.md)
- document the team agreement on the decision and/or
- define when/how this decision the decision should be realized and if/when it should be re-visited.
-Links to other decisions and resources might appear here as well.}
+[Mayor información sobre EDA](More_information.md)
