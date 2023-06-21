@@ -1,5 +1,7 @@
 # Iteración 1
 
-[Formato MADR](MADR.md)
+## Formato MADR
+[MADR](MADR.md)
 
-<img src="Diagrama_UML.pdf" width="60%" height="60%" />
+## Diagrama UML
+<img src="Diagrama_UML.png" width="60%" height="60%" />
