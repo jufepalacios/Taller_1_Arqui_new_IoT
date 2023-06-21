@@ -4,4 +4,4 @@
 [MADR](MADR.md)
 
 ## Diagrama UML
-<img src="Diagrama_UML.png" width="60%" height="60%" />
+<img src="Diagrama_UML.png" width="80%" height="80%" />
