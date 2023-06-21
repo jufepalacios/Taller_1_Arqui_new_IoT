@@ -63,4 +63,4 @@ comúnmente utilizado para desarrollar interfaces de usuario que divide la lógi
 
 ## More Information
 
-[Mayor información sobre EDA](More_information.md)
+[Mayor información sobre EDA](More_Information.md)
