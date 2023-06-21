@@ -13,11 +13,12 @@ Una factoría 4.0 desea implementar un software que sea capaz de crear y asignar
 
 ## Decision Drivers
 
-* Almacenamiento - almacenar la información recopilada por los sensores, el inventario y las ordenes de trabajo.
+* Almacenamiento – Almacenar la información recopilada por los sensores, el inventario y las órdenes de trabajo.
 * Visualización – Dashboard para visualizar los datos de la factoría en tiempo real.
-* Mensajería – Comunicación entre los componentes del sistema.
+* Órdenes de trabajo – Asignación de ordenes por operario y maquinas para fabricar componentes.
 * Optimización – Evaluación y ejecución de los algoritmos de predicción.
-* Lectura – Capturar los valores registrados por los diferentes sensores.
+* Canal de transmisión – Comunicación entre los paquetes del sistema.
+* Lectura y Procesamiento – Capturar los valores registrados por los diferentes sensores y procesar su información.
 
 
 ## Considered Options
@@ -31,17 +32,10 @@ Chosen option: "Estilo por eventos: EDA", porque resuelve todos los requerimient
 
 ### Consequences
 
-* Buena, porque es fácil agregar emisores de eventos y consumidores.
+* Buena, porque es fácil agregar emisores y consumidores de eventos.
 * Buena, porque se puede distribuir el evento de forma ramificada a los consumidores y estos pueden procesarlo en paralelo con un propósito diferente.
 * Buena, porque permite supervisar y recibir alertas sobre cualquier anomalía, cambio o actualización en los eventos.
-* Mala, porque se debe garantizar la entrega de los eventos, no se pueden perder. 
-
-
-### Confirmation
-
-# no creo que necesitemos este
-{Describe how the implementation of/compliance with the ADR is confirmed. E.g., by a review or an ArchUnit test.
- Although we classify this element as optional, it is included in most ADRs.}
+* Mala, porque se debe garantizar la entrega de los eventos, no se pueden perder.  
 
 
 ## Pros and Cons of the Options
@@ -69,9 +63,7 @@ comúnmente utilizado para desarrollar interfaces de usuario que divide la lógi
 
 ## More Information
 
-# No creo que necesitemos este
-
-{You might want to provide additional evidence/confidence for the decision outcome here and/or
+[Mayor información sobre EDA](more_information.md)
  document the team agreement on the decision and/or
  define when/how this decision the decision should be realized and if/when it should be re-visited.
 Links to other decisions and resources might appear here as well.}
