@@ -5,22 +5,22 @@ Elementos del estilo EDA:
 
 -   **Tipos de Eventos**:
 
-    -   [Notificación/Informativo]{.underline}: información que NO
+    -   <ins>Notificación/Informativo</ins>: información que NO
         debería generar una respuesta o cambio en el sistema.
 
-    -   [Alerta]{.underline}: información que debería generar una
+    -   <ins>Alerta</ins>: información que debería generar una
         respuesta o cambio en el sistema -\> Enfoque Transacción
 
-    -   [Objeto]{.underline}: registro de un evento a nivel datos y no
+    -   <ins>Objeto</ins>: registro de un evento a nivel datos y no
         de comportamiento
 
-    -   [Negocio]{.underline}: puede contener datos que ayudan a definir
+    -   <ins>Negocio</ins>: puede contener datos que ayudan a definir
         el contexto de un evento -\> Serían sus propiedades de
         aplicación (Por ejemplo, el id interno del sensor sobre el que
         aplica). En algunos casos esto puede activar un cambio
         permanente en el sistema.
 
-    -   [Agrupación (evento complejo]{.underline}): abstracción de alto
+    -   <ins>Agrupación (evento complejo)</ins>: abstracción de alto
         nivel de más de un evento.
 
 -   **Contenido del evento**:
@@ -28,7 +28,7 @@ Elementos del estilo EDA:
     -   Se suele implementar como un enfoque de \"Entidad\" / \"Entity\"
         (Clase con atributos).
 
-    -   [Particularización]{.underline}**:** Construir eventos
+    -   <ins>Particularización</ins>: Construir eventos
         específicos para cada uno de los casos de uso (atributos propios
         con lo que se trabaja, naming concreto, etc.)
 
@@ -38,17 +38,17 @@ Elementos del estilo EDA:
     -   Existen diferentes formas de implementar este atributo:
         secuencia, timestamp, generador de ids, etc.
 
-    -   [Occurred]{.underline}: Cuando el evento ya ha ocurrido -\> Se
+    -   <ins>Occurred</ins>: Cuando el evento ya ha ocurrido -\> Se
         suele expresar en un tiempo verbal pasado.
 
-    -   [Arrived]{.underline}: Cuando el evento se va a producir o se
+    -   <ins>Arrived</ins>: Cuando el evento se va a producir o se
         quiere que se produzca -\> Se suele expresar en un tiempo verbal
         infinitivo / imperativo.
 
     -   La relación con objetos de negocio (dependerá de los objetos a
         los que haga referencia).
 
-    -   [Tipología]{.underline}:
+    -   <ins>Tipología</ins>:
 
         -   **Property-based**: Uso de uno o varios atributos que
             referencian a las propiedades no identificativas del
@@ -66,7 +66,7 @@ Elementos del estilo EDA:
             \"payload\" del evento donde se puede guardar casi cualquier
             cosa. Se suele representar por el atributo payload
 
-    -   El uso de atributos con [relevancia en el tiempo]{.underline}
+    -   El uso de atributos con <ins>relevancia en el tiempo</ins>
         (\[timeCriteria\] que puede ser creationDate, updateDate,
         duration, \...)
 
@@ -82,4 +82,4 @@ Elementos del estilo EDA:
     -   Sistema de representación: Formato JSON
 
     -   Con esquema:
- ![esquema](esquema_more_information.png)  
+<img src="esquema_more_information.png" width="50%" height="50%" />
