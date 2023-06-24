@@ -1,10 +1,11 @@
 ---
-# status: {proposed}
-# date: {2023-06-24}
-# deciders: {Julian Moreno, Santiago Segura}
-# consulted: {Vihlai Maldonado, Nicolás Tibatá}
-# informed: {Juan Palacios}
+status: {accepted}
+date: {2023-06-17}
+deciders: {Julian Moreno, Santiago Segura}
+consulted: {Nicolas Tibatá, Vihlai Maldonado}
+informed: {Juan Palacios}
 ---
+
 # Modulo de generación de órdenes de trabajo.
 
 ## Context and Problem Statement
