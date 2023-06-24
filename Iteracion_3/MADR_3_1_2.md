@@ -22,7 +22,7 @@ Dentro de la factoría inteligente debe existir un componente de visualización.
 
 ## Considered Options
 
-* Looker
+* Looker , [PowerBI](MADR_3_1_1.md), [Google data Studio](MADR_3_2_1.md) 
 
 
 ## Pros and Cons of the Options
