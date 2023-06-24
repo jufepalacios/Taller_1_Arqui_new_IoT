@@ -17,12 +17,11 @@ Dentro de la factoría inteligente debe existir un sistema de notificaciones, qu
 
 * Debe permitir la subscripción de los trabajadores. 
 * Las notificaciones deben llegar en tiempo casi real. 
-* Debe ser tipo SQL (Requerimiento de cliente)
-* Se podrá conectar con la herramienta de visualización escogida, para que sirva como fuente de alimentación de esta. 
+
 
 ## Considered Options
 
-* Patrón de diseño Observer
+* Patrón de diseño Observer, (Mediator)[MADR_3_3_2.md)
 
 
 <!-- This is an optional element. Feel free to remove. -->
