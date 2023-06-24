@@ -22,7 +22,8 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 
 ## Considered Options
-* Circuit Breaker 
+* Chain of Responsibility
+* Circuit Breaker
 
 ## Pros and Cons of the Options
 
