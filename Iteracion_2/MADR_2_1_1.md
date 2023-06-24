@@ -28,20 +28,6 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 
 
-## Decision Outcome
-
-Chosen option: "Patrón pub/sub", porque resuelve los requerimientos funcionales ya que permite a los operadores suscribirse a diferentes eventos y notificaciones, asimismo, tiene una mejor escalabilidad
-
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
-* Buena, ya que permite el desacoplamiento entre los productores de mensajes (publicadores) y los consumidores de mensajes (suscriptores).
-
-* Buena, ya que es adecuado para sistemas distribuidos y escalables.
-
-* Buena, ya que es fácil agregar nuevos suscriptores sin afectar a los publicadores existentes.
-
-* Mala, ya que puede incurrir en duplicación de mensajes.
-
 <!-- This is an optional element. Feel free to remove. -->
 ## Pros and Cons of the Options
 
