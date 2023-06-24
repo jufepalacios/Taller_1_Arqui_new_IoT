@@ -6,7 +6,7 @@ deciders: {Julián Moreno,Santiago Segura}
 consulted: {Vilhai Maldonado, Nicolás Tibatá}
 informed: {Felipe Palacios}
 ---
-# Componente de arquitectura para visualización y elaboración de dashboard
+# Looker:Componente de arquitectura para visualización y elaboración de dashboard
 
 ## Context and Problem Statement
 
