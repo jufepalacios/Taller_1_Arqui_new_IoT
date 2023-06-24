@@ -11,3 +11,7 @@
 [MADR 2.2.1](MADR_2_2_1.md)
 
 [MADR 2.2.2](MADR_2_2_2.md)
+
+
+## Diagrama UML
+<img src="Diagrama UML_Iteracion2.png" width="80%" height="80%" />
