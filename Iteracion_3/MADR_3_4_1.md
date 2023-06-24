@@ -21,7 +21,7 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 ## Considered Options
 
 * Patrón Singleton
-* Patrón Factory
+* Patrón Factory [Formato MADR](MADR_3_4_2.md)
 
 ## Decision Outcome
 
