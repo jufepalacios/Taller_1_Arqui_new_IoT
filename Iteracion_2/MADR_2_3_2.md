@@ -22,7 +22,7 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 
 ## Considered Options
-* Chain of Responsibility
+* Chain of Responsibility [Formato MADR](MADR_2_3_1.md)
 * Circuit Breaker
 
 ## Pros and Cons of the Options
