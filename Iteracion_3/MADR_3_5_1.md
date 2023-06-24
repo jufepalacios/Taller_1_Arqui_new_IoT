@@ -21,7 +21,7 @@ El sistema contará con dos algoritmos inteligentes predictivo para optimizar el
 ## Considered Options
 
 * Patrón Strategy
-* Patrón State
+* Patrón State [Formato MADR](MADR_3_5_1.md)
 
 ## Decision Outcome
 
