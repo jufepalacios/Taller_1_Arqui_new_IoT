@@ -20,8 +20,8 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 
 ## Considered Options
 
-* Singleton
-* Factory
+* Patrón Singleton
+* Patrón Factory
 
 ## Decision Outcome
 
