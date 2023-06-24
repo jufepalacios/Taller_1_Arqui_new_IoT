@@ -6,7 +6,7 @@ consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
 
-# Patrón Singleton para el modulo de generación de órdenes de trabajo.
+# Patrón Singleton para el módulo de generación de órdenes de trabajo.
 
 ## Context and Problem Statement
 
