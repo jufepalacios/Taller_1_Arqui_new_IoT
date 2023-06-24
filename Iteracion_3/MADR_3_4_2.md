@@ -6,7 +6,7 @@ consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
 
-# Modulo de generación de órdenes de trabajo.
+# Patrón Factory para el modulo de generación de órdenes de trabajo.
 
 ## Context and Problem Statement
 
@@ -20,8 +20,8 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 
 ## Considered Options
 
-* Singleton
-* Factory
+* Patrón Singleton
+* Patrón Factory
 
 ## Pros and Cons of the Options
 
