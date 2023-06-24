@@ -1,5 +1,5 @@
 ---
-status: {proposed}
+status: {accepted}
 date: {2023-06-22}
 deciders: {Nicolas Tibatá, Vihlai Maldonado}
 consulted: {Julian Moreno, Santiago Segura}
