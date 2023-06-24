@@ -1,11 +1,12 @@
 ---
-# status: {proposed}
-# date: {2023-06-24}
-# deciders: {Julian Moreno, Santiago Segura}
-# consulted: {Vihlai Maldonado, Nicolás Tibatá}
-# informed: {Juan Palacios}
+status: {proposed}
+date: {2023-06-24}
+deciders: {Julian Moreno, Santiago Segura}
+consulted: {Vihlai Maldonado, Nicolás Tibatá}
+informed: {Juan Palacios}
 ---
-# Módulo de algoritmos de optimización
+
+# Patrón State para el módulo de algoritmos de optimización
 
 ## Context and Problem Statement
 
