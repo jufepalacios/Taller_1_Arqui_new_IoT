@@ -22,7 +22,9 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 
 ## Considered Options
-* Hub and Spoke 
+* Clase “LecturaSensor”
+* Hub and Spoke
+* DAO
 
 ## Pros and Cons of the Options
 
