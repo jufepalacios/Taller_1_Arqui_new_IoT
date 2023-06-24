@@ -1,6 +1,6 @@
 ---
 # These are optional elements. Feel free to remove any of them.
-status: {accepted}
+status: {proposed}
 date: {2023-06-22}
 deciders: {Julian Moreno, Santiago Segura}
 consulted: {Nicolas Tibatá, Vihlai Maldonado}
@@ -27,7 +27,7 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 ## Decision Outcome
 
-Chosen option: Apache Kafka, porque resuelve los requerimientos funcionales, permite mejor escalabailidad y tolerancia a fallos que las otras opciones consideradas. Esta solución implementa el patrón publicador suscriptor, el cuál cumplía los requerimientos funcionales, debido a esto se optó por escoger esta tecnología en lugar de implementar una que siguiera el patrón publicador/suscriptor.
+Chosen option: Apache Kafka, porque resuelve los requerimientos funcionales, permite mejor escalabailidad y tolerancia a fallos que las otras opciones consideradas. Esta solución implementa el patrón publicador suscriptor, el cuál cumplía los requerimientos funcionales, debido a esto se optó por escoger esta tecnología en lugar de desarrollar una que siguiera el patrón publicador/suscriptor.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
