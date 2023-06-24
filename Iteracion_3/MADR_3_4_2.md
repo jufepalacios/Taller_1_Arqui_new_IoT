@@ -14,7 +14,7 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 
 ## Decision Drivers
 
-* CRUD orden de trabajo.
+* CRUD orden de trabajo
 * Almacenar la información de las ordenes de trabajo en BBDD
 * Almacenar la información del inventario del material en BBDD
 
