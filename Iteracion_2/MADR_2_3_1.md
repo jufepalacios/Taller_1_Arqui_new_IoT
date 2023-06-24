@@ -22,7 +22,7 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 ## Considered Options
 * Chain of Responsibility
-* Circuit Breaker
+* Circuit Breaker [Formato MADR](MADR_2_3_2.md)
 
 ## Decision Outcome 
 Chosen option: Chain of Responsability porque resuelve los requerimientos funcionales de procesamiento de datos de los sensores.
