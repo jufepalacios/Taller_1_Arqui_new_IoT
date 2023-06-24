@@ -20,7 +20,7 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 
 ## Considered Options
 
-* Patrón Singleton
+* Patrón Singleton [Formato MADR](MADR_3_4_1.md)
 * Patrón Factory
 
 ## Pros and Cons of the Options
