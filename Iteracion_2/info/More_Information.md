@@ -16,4 +16,5 @@ Elementos de Apache Kafka:
 
 
  <ins> Diagrama Arquitectura
+
 ![Sonny and Mariel high fiving.](https://dezyre.gumlet.io/images/blog/apache-kafka-architecture-/image_589142173211625734253276.png?w=1200&dpr=1.0)
