@@ -22,9 +22,9 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 
 ## Considered Options
-* Clase “LecturaSensor”
-* Hub and Spoke
-* DAO
+* Clase “LecturaSensor” 
+* Hub and Spoke [Formato MADR](MADR_2_2_2.md)
+* DAO [Formato MADR](MADR_2_2_3.md)
 
 ## Decision Outcome
 Chosen option: "Clase LecturaSensor", porque es la solución más sencilla en cuanto a la lectura de datos dado por el procesamiento de los sensores.
