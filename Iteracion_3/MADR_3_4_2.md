@@ -6,7 +6,7 @@ consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
 
-# Patrón Factory para el modulo de generación de órdenes de trabajo.
+# Patrón Factory para el módulo de generación de órdenes de trabajo.
 
 ## Context and Problem Statement
 
