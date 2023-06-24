@@ -2,7 +2,7 @@
 # These are optional elements. Feel free to remove any of them.
 status: {proposed}
 date: {2023-06-20}
-ddeciders: {Julian Moreno, Santiago Segura}
+deciders: {Julian Moreno, Santiago Segura}
 consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
