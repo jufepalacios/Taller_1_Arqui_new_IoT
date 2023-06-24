@@ -29,16 +29,6 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 * Patrón Broker [Formato MADR](MADR_2_1_4.md)
 
 
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
-
-* Buena, porque ofrece alta escalabilidad y rendimiento
-
-* Buena, porque almacena los mensajes de forma persistente en disco, lo que garantiza la durabilidad de los datos incluso en caso de fallos.
-
-* Buena, porque utiliza una arquitectura distribuida lo que permite distribuir el procesamiento y almacenamiento de datos en múltiples nodos. Esto proporciona una mayor disponibilidad y capacidad de escalabilidad horizontal.
-
-* Neutral, porque dependiendo del tamaño del flujo de datos requiere una infraestructura robusta que soporte la replicación de datos, y nodos con gran capacidad, lo que puede incrementar los costos.
 
 
 <!-- This is an optional element. Feel free to remove. -->
