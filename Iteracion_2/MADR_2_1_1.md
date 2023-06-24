@@ -25,7 +25,9 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 ## Considered Options
 
 * Patrón publicador/suscriptor (Publish Suscriber)
-
+* Apache Kafka [Formato MADR](MADR_2_1_2.md)
+* Apache ActiveMQ [Formato MADR](MADR_2_1_3.md)
+* Patrón Broker [Formato MADR](MADR_2_1_4.md)
 
 
 <!-- This is an optional element. Feel free to remove. -->

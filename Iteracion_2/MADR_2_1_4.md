@@ -24,6 +24,10 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 ## Considered Options
 
 * Broker de mensajes
+* Patrón publicador/suscriptor [Formato MADR](MADR_2_1_1.md)
+* Apache Kafka [Formato MADR](MADR_2_1_2.md)
+* Patrón Broker [Formato MADR](MADR_2_1_4.md)
+* Apache ActiveMQ [Formato MADR](MADR_2_1_3.md)
 
 ## Pros and Cons of the Options
 
