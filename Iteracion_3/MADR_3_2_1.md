@@ -2,9 +2,9 @@
 # These are optional elements. Feel free to remove any of them.
 status: {proposed}
 date: {2023-06-22}
-deciders: {Santiago Segura, Felipe Palacios}
-consulted: {Vilhai Maldonado, Julián Moreno}
-informed: {Nicolás Tibatá}
+deciders: {Julián Moreno,Santiago Segura}
+consulted: {Vilhai Maldonado, Nicolás Tibatá}
+informed: {Felipe Palacios}
 ---
 # Componente base de datos para almacenamiento
 
