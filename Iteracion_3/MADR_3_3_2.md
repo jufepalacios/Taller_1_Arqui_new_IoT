@@ -1,0 +1,45 @@
+---
+# These are optional elements. Feel free to remove any of them.
+status: {proposed}
+date: {2023-06-22}
+deciders: {Santiago Segura, Felipe Palacios}
+consulted: {Vilhai Maldonado, Julián Moreno}
+informed: {Nicolás Tibatá}
+---
+# Componente base de datos para almacenamiento
+
+## Context and Problem Statement
+
+Dentro de la factoría inteligente debe existir un sistema de notificaciones, que permita a  los operarios suscribirse para poder recibir las alertas. Estas alertas pueden generarse a partir de la información de los sensores y ordenes de trabajo.
+
+<!-- This is an optional element. Feel free to remove. -->
+## Decision Drivers
+
+* Debe permitir la subscripción de los trabajadores. 
+* Las notificaciones deben llegar en tiempo casi real. 
+* Debe ser tipo SQL (Requerimiento de cliente)
+* Se podrá conectar con la herramienta de visualización escogida, para que sirva como fuente de alimentación de esta. 
+
+## Considered Options
+
+* Patrón de diseño Mediator
+
+
+<!-- This is an optional element. Feel free to remove. -->
+
+## Pros and Cons of the Options
+
+### Pros
+
+
+Permite reducir el acoplamiento entre los componentes del sistema, 
+Simplifica la comunicaicón entre los componentes, poniendo un agente central (mediador).
+Es fácil agregar componentes al sistema.
+Los componentes se vuelven más independientes, ya que no dependen de otros componentes, sino solo del mediador.
+
+
+### Cons
+
+Gran dependencia del mediador. Si esté queda mal implementado, puede fallar el sistema completo.
+A medida que el sistema crece y se agregan componenetes, el mediador puede sobrecargarse. 
+El tiempo de ejecución se ve directamente afectado por la eficacia del mediador. 
