@@ -6,7 +6,7 @@ deciders: {Julián Moreno,Santiago Segura}
 consulted: {Vilhai Maldonado, Nicolás Tibatá}
 informed: {Felipe Palacios}
 ---
-# Componente base de datos para almacenamiento
+# Patrón de diseño Mediator para sistema de notificaciones
 
 ## Context and Problem Statement
 
@@ -17,12 +17,11 @@ Dentro de la factoría inteligente debe existir un sistema de notificaciones, qu
 
 * Debe permitir la subscripción de los trabajadores. 
 * Las notificaciones deben llegar en tiempo casi real. 
-* Debe ser tipo SQL (Requerimiento de cliente)
-* Se podrá conectar con la herramienta de visualización escogida, para que sirva como fuente de alimentación de esta. 
+
 
 ## Considered Options
 
-* Patrón de diseño Mediator
+* Patrón de diseño Mediator, [Observer](MADR_3_3_1.md)
 
 
 <!-- This is an optional element. Feel free to remove. -->
