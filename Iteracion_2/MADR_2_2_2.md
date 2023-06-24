@@ -22,9 +22,9 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 
 ## Considered Options
-* Clase “LecturaSensor”
+* Clase “LecturaSensor” [Formato MADR](MADR_2_2_1.md)
 * Hub and Spoke
-* DAO
+* DAO [Formato MADR](MADR_2_2_3.md)
 
 ## Pros and Cons of the Options
 
