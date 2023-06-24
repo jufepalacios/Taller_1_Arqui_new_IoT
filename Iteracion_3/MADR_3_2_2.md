@@ -6,7 +6,7 @@ deciders: {Julián Moreno,Santiago Segura}
 consulted: {Vilhai Maldonado, Nicolás Tibatá}
 informed: {Felipe Palacios}
 ---
-# Componente base de datos para almacenamiento
+# MySQL: Componente base de datos para almacenamiento
 
 ## Context and Problem Statement
 
@@ -22,7 +22,7 @@ Dentro de la factoría inteligente debe existir un componente de almacenamiento 
 
 ## Considered Options
 
-* MySQL
+* MySQL, [PostgreSQL](MADR_3_2_1,md), [Oracle](MADR_3_2_3.md)
 
 
 <!-- This is an optional element. Feel free to remove. -->
