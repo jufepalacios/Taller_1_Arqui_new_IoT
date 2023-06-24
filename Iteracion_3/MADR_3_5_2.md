@@ -1,6 +1,6 @@
 ---
 status: {proposed}
-date: {2023-06-24}
+date: {2023-06-22}
 deciders: {Julian Moreno, Santiago Segura}
 consulted: {Vihlai Maldonado, Nicolás Tibatá}
 informed: {Juan Palacios}
