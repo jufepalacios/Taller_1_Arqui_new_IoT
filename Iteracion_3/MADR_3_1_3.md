@@ -6,7 +6,7 @@ deciders: {Julián Moreno,Santiago Segura}
 consulted: {Vilhai Maldonado, Nicolás Tibatá}
 informed: {Felipe Palacios}
 ---
-# Componente de arquitectura para visualización y elaboración de dashboard
+# Google data studio: Componente de arquitectura para visualización y elaboración de dashboard
 
 ## Context and Problem Statement
 
@@ -22,7 +22,7 @@ Dentro de la factoría inteligente debe existir un componente de visualización.
 
 ## Considered Options
 
-* Google data studio
+* Google data studio, [PowerBI](MADRD_3_1_1.md), [Looker](MADRD_3_1_2.md)
 
 
 <!-- This is an optional element. Feel free to remove. -->
