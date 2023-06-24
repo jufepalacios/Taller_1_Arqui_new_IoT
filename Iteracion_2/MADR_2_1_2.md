@@ -28,9 +28,6 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 * Apache ActiveMQ [Formato MADR](MADR_2_1_3.md)
 * Patrón Broker [Formato MADR](MADR_2_1_4.md)
 
-## Decision Outcome
-
-Chosen option: Apache Kafka, porque resuelve los requerimientos funcionales, permite mejor escalabailidad y tolerancia a fallos que las otras opciones consideradas. Esta solución implementa el patrón publicador suscriptor, el cuál cumplía los requerimientos funcionales, debido a esto se optó por escoger esta tecnología en lugar de desarrollar una que siguiera el patrón publicador/suscriptor.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
