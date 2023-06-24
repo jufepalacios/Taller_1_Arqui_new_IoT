@@ -2,8 +2,8 @@
 # These are optional elements. Feel free to remove any of them.
 status: {proposed}
 date: {2023-06-22}
-deciders: {Nicolas Tibatá, Vihlai Maldonado}
-consulted: {Julian Moreno, Santiago Segura}
+ddeciders: {Julian Moreno, Santiago Segura}
+consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
 # Selección del Broker para el sistema de mensajería

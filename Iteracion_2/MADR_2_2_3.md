@@ -1,15 +1,15 @@
 ---
 status: {proposed}
 date: {2023-06-22}
-deciders: {Nicolas Tibatá, Vihlai Maldonado}
-consulted: {Julian Moreno, Santiago Segura}
+deciders: {Julian Moreno, Santiago Segura}
+consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
 
 # Patrón DAO para la arquitectura de lectura
 
 ## Context and Problem Statement
-La factoría 4.0 requiere que sus operarios estén permanentemente notificados del estado de las máquinas y de la línea de producción. Para ello se deben poder suscribir a diferentes eventos y notificaciones como actuailizaciones en la produccción, fallos de sensores o sobrecarga de producción. En caso de que se supere un umbral de intentos de conexión, se considerará que el dispositivo está fuera de servicio.
+La factoría 4.0 requiere que sus operarios estén permanentemente notificados del estado de las máquinas y de la línea de producción. Para ello se deben poder suscribir a diferentes eventos y notificaciones como actualizaciones en la producción, fallos de sensores o sobrecarga de producción. En caso de que se supere un umbral de intentos de conexión, se considerará que el dispositivo está fuera de servicio.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
