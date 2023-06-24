@@ -6,7 +6,7 @@ deciders: {Julián Moreno,Santiago Segura}
 consulted: {Vilhai Maldonado, Nicolás Tibatá}
 informed: {Felipe Palacios}
 ---
-# Componente base de datos para almacenamiento
+# Patrón de diseño observer para sistema de notificaciones
 
 ## Context and Problem Statement
 
@@ -21,7 +21,7 @@ Dentro de la factoría inteligente debe existir un sistema de notificaciones, qu
 
 ## Considered Options
 
-* Patrón de diseño Observer, [Mediator)](MADR_3_3_2.md=
+* Patrón de diseño Observer, [Mediator)](MADR_3_3_2.md)
 
 
 <!-- This is an optional element. Feel free to remove. -->
