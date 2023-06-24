@@ -21,8 +21,8 @@ Dentro de la factoría intelignete debe existir un componente de visualización.
 
 ## Considered Options
 
-Power BI
-[Looker](MADR_3_1_2.md)
+Power BI, 
+[Looker](MADR_3_1_2.md) , 
 [Google data studio](MADR_3_1_3.md)
   
 
