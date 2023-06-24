@@ -1,5 +1,5 @@
 ---
-status: {accepted}
+status: {proposed}
 date: {2023-06-22}
 deciders: {Nicolas Tibatá, Vihlai Maldonado}
 consulted: {Julian Moreno, Santiago Segura}
@@ -22,6 +22,7 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 ## Considered Options
 * Chain of Responsibility
+* Circuit Breaker
 
 ## Decision Outcome 
 Chosen option: Chain of Responsability porque resuelve los requerimientos funcionales de procesamiento de datos de los sensores.

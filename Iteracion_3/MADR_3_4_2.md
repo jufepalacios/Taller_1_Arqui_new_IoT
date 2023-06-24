@@ -6,7 +6,7 @@ consulted: {Nicolas Tibatá, Vihlai Maldonado}
 informed: {Juan Palacios}
 ---
 
-# Modulo de generación de órdenes de trabajo.
+# Patrón Factory para el módulo de generación de órdenes de trabajo.
 
 ## Context and Problem Statement
 
@@ -14,14 +14,14 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 
 ## Decision Drivers
 
-* CRUD orden de trabajo.
+* CRUD orden de trabajo
 * Almacenar la información de las ordenes de trabajo en BBDD
 * Almacenar la información del inventario del material en BBDD
 
 ## Considered Options
 
-* Singleton
-* Factory
+* Patrón Singleton [Formato MADR](MADR_3_4_1.md)
+* Patrón Factory
 
 ## Pros and Cons of the Options
 
