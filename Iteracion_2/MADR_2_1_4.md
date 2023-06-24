@@ -1,12 +1,12 @@
 ---
-# These are optional elements. Feel free to remove any of them.
 status: {proposed}
 date: {2023-06-22}
 deciders: {Nicolas Tibatá, Vihlai Maldonado}
 consulted: {Julian Moreno, Santiago Segura}
 informed: {Juan Palacios}
 ---
-# Selección del Broker para el sistema de mensajería
+
+# Patrón Broker de mensajes para la arquitectura de mensajería
 
 ## Context and Problem Statement
 La factoría 4.0 requiere que sus operarios estén permanentemente notificados del estado de las máquinas y de la línea de producción. Para ello se deben poder suscribir a diferentes eventos y notificaciones como actuailizaciones en la produccción, fallos de sensores o sobrecarga de producción. En caso de que se supere un umbral de intentos de conexión, se considerará que el dispositivo está fuera de servicio.
@@ -23,10 +23,15 @@ La factoría 4.0 requiere que sus operarios estén permanentemente notificados d
 
 ## Considered Options
 
-* Apache ActiveMQ
+* Broker de mensajes
 
 ## Pros and Cons of the Options
 
-### ActiveMQ
-ActiveMQ es una plataforma de mensajería de software de código abierto que implementa el protocolo Java Message Service (JMS). Proporciona una infraestructura robusta y escalable para el intercambio de mensajes entre aplicaciones distribuidas. ActiveMQ se basa en un modelo de publicador/suscriptor (pub/sub) y permite a las aplicaciones productoras enviar mensajes a colas o tópicos, y a las aplicaciones consumidoras recibir y procesar esos mensajes de manera asíncrona.
+### Broker de mensajes
+Patrón de diseño arquitectónico que se utiliza para facilitar la comunicación entre diferentes componentes o sistemas distribuidos. En este patrón, un componente centralizado conocido como "broker" actúa como intermediario entre los productores de mensajes y los consumidores. Los productores envían mensajes al broker, que luego los enruta y distribuye a los consumidores interesados en esos mensajes. El broker maneja las tareas de encolamiento, enrutamiento y entrega de mensajes, lo que permite una comunicación desacoplada entre los diferentes componentes.
 
+* Buena, flexibilidad, mantenibilidad y adaptibilidad.
+* Mala, dependencia del intermediario ya que se agrega un elemento crítico en la comunicación, el intermediario.
+* Buena, escalabilidad ya que hay posibilidad de distribución.
+* Mala, Escalabilidad limitada ya que a pesar de poder escalar, esta tiene la limitante de los recursos del intermediarios.
+* Buena, interoperabilidad entre brokers.
