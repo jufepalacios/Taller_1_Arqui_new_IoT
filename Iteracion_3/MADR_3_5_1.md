@@ -6,7 +6,7 @@ consulted: {Vihlai Maldonado, Nicolás Tibatá}
 informed: {Juan Palacios}
 ---
 
-# Módulo de algoritmos de optimización
+# Patrón Strategy para el módulo de algoritmos de optimización
 
 ## Context and Problem Statement
 
