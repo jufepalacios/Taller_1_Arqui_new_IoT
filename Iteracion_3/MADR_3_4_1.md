@@ -23,17 +23,6 @@ El sistema debe contar con un módulo de generación de órdenes de trabajo que 
 * Patrón Singleton
 * Patrón Factory [Formato MADR](MADR_3_4_2.md)
 
-## Decision Outcome
-
-Chosen option: "Singleton", porque cumple con las características del problema y no requiere la creación de diferentes clases para cada orden.
-
-### Consequences
-
-* Buena, porque garantiza que solo haya una clase y proporciona un acceso global a ella para que los otros módulos de la arquitectura puedan accederla.
-* Buena, porque al solo ser una instancia se garantiza que los recursos compartidos se gestionen de manera eficiente y exista consistencia en la información.
-* Buena, porque es fácil de implementar y no requiere de más clases para su funcionamiento.
-* Mala, porque si múltiples hilos de ejecución intentan acceder o modificar el Singleton simultáneamente, pueden surgir problemas de concurrencia.
-
 ## Pros and Cons of the Options
 
 ### Singleton
