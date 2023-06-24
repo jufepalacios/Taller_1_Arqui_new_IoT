@@ -20,7 +20,7 @@ El sistema contará con dos algoritmos inteligentes predictivo para optimizar el
 
 ## Considered Options
 
-* Patron Strategy
+* Patron Strategy [Formato MADR](MADR_3_5_1.md)
 * Patron State
 
 ## Pros and Cons of the Options
